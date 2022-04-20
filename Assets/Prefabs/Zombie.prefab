@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 1
+  _damageBackgrond: {fileID: 0}
 --- !u!1 &5547808073193221862
 GameObject:
   m_ObjectHideFlags: 0
@@ -2626,8 +2627,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5547808074561785863}
   - component: {fileID: 5547808074561785976}
-  - component: {fileID: 5547808074561785977}
-  - component: {fileID: 5547808074561785978}
+  - component: {fileID: 2550083584820589051}
+  - component: {fileID: -6034042042603466915}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -2683,22 +2684,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5547808074561785977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5547808074561785979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd83ec5ed7f78e9489eb50dce63083d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _distance: 15
-  _distanceForAttack: 4
---- !u!195 &5547808074561785978
+--- !u!195 &2550083584820589051
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2720,6 +2706,22 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-6034042042603466915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5547808074561785979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd83ec5ed7f78e9489eb50dce63083d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  _distance: 15
+  _distanceForAttack: 4
+  _zombie: {fileID: 0}
 --- !u!1 &5547808074566397863
 GameObject:
   m_ObjectHideFlags: 0
@@ -2900,6 +2902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 1
+  _damageBackgrond: {fileID: 0}
 --- !u!1 &5547808074765951700
 GameObject:
   m_ObjectHideFlags: 0
