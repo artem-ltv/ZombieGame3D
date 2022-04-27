@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float _health;
+    public float Health;
 
     public void ApplyDamage(int damage)
     {
-        _health -= damage;
+        Health -= damage;
 
-        if (_health <= 0)
+        if (Health <= 0)
             Die();
     }
 

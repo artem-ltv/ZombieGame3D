@@ -7,7 +7,7 @@ public class Zombie : Player
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.E))
+        if(Health <= 0)
             Die();
     }
 

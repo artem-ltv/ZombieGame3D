@@ -29,7 +29,7 @@ public class ZombieMovement : MonoBehaviour
     private void OnDisable()
     {
         _zombie.ZombieDie -= FallingBack;
-        _zombie.ZombieDie += BlockMovement;
+        _zombie.ZombieDie -= BlockMovement;
     }
     
     private void Update()
