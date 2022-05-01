@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -6,11 +7,13 @@ public class Zombie : Player
 {
     public UnityAction ZombieDie;
 
-    private CapsuleCollider _collider;
+    [SerializeField] private GameObject[] _zombieDamages;
+
+    private CapsuleCollider _bodyCollider;
 
     private void Start()
     {
-        _collider = GetComponent<CapsuleCollider>();    
+        _bodyCollider = GetComponent<CapsuleCollider>();    
     }
 
     private void Update()
@@ -21,7 +24,18 @@ public class Zombie : Player
 
     protected override void Die()
     {
-        _collider.enabled = false;
+        StartCoroutine(RemoveCollision());
+
+        foreach (var item in _zombieDamages)
+            Destroy(item);
+
         ZombieDie?.Invoke();
+    }
+
+    private IEnumerator RemoveCollision()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        _bodyCollider.enabled = false;
     }
 }
