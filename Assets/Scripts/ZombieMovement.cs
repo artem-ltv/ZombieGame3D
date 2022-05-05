@@ -3,6 +3,7 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(Zombie))]
 public class ZombieMovement : MonoBehaviour
 {
     [SerializeField] private Transform _player;
