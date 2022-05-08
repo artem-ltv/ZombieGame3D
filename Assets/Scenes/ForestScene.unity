@@ -1348,7 +1348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &706973217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4595,13 +4595,45 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0.18632075
       objectReference: {fileID: 0}
+    - target: {fileID: 6260740782657239342, guid: 16ef9fdbd02f4a84bb2feb780eff8741, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260740782657239342, guid: 16ef9fdbd02f4a84bb2feb780eff8741, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260740782657239342, guid: 16ef9fdbd02f4a84bb2feb780eff8741, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.47999954
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260740782657239342, guid: 16ef9fdbd02f4a84bb2feb780eff8741, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260740782657239342, guid: 16ef9fdbd02f4a84bb2feb780eff8741, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260740782657239342, guid: 16ef9fdbd02f4a84bb2feb780eff8741, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 6260740782657239343, guid: 16ef9fdbd02f4a84bb2feb780eff8741, type: 3}
       propertyPath: _mouseSensivity
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 6260740783383495800, guid: 16ef9fdbd02f4a84bb2feb780eff8741, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6260740783685525536, guid: 16ef9fdbd02f4a84bb2feb780eff8741, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260740783685525536, guid: 16ef9fdbd02f4a84bb2feb780eff8741, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6260740783685525540, guid: 16ef9fdbd02f4a84bb2feb780eff8741, type: 3}
       propertyPath: m_RootOrder
