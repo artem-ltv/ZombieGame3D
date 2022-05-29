@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
         _buttonPlay.onClick.AddListener(Play);
         _buttonOptions.onClick.AddListener(ShowOptions);
         _buttonQuit.onClick.AddListener(Quit);

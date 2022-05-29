@@ -1,7 +1,12 @@
+using System.Collections;
 using UnityEngine;
-
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+ 
 public class Player : MonoBehaviour
 {
+    public UnityAction PlayerDie;
+
     public float Health;
 
     public void ApplyDamage(int damage)
@@ -14,6 +19,6 @@ public class Player : MonoBehaviour
 
     protected virtual void Die()
     {
-        //
+        PlayerDie.Invoke();
     }
 }
