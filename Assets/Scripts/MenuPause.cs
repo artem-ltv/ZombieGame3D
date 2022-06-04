@@ -8,6 +8,7 @@ public class MenuPause : MonoBehaviour
     [SerializeField] private Button _buttonResume;
     [SerializeField] private Button _buttonOptions;
     [SerializeField] private Button _buttonMainMenu;
+    [SerializeField] private AudioSource[] _soundsOnLevel;
 
     private bool isPause;
 
@@ -21,6 +22,9 @@ public class MenuPause : MonoBehaviour
 
     private void Update()
     {
+        foreach (var sound in _soundsOnLevel)
+            sound.mute = isPause;
+
         if (Input.GetKeyDown(KeyCode.Escape))
             isPause = !isPause;
 
